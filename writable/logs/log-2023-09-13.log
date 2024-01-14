@@ -1,0 +1,54 @@
+INFO - 2023-09-13 12:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:04:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:05:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:30:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:31:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-13 12:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-13 12:38:11 --> Invalid file: "akun/wrapper.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/wrapper.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('akun/wrapper', [], true)
+ 3 APPPATH\Controllers\akun.php(13): view('akun/wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\akun->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akun))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 12:40:03 --> Invalid file: "akun/wrapper.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/wrapper.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('akun/wrapper', [], true)
+ 3 APPPATH\Controllers\akun.php(13): view('akun/wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\akun->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akun))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 12:40:04 --> Invalid file: "akun/wrapper.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/wrapper.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('akun/wrapper', [], true)
+ 3 APPPATH\Controllers\akun.php(13): view('akun/wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\akun->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akun))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 12:40:04 --> Invalid file: "akun/wrapper.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/wrapper.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('akun/wrapper', [], true)
+ 3 APPPATH\Controllers\akun.php(13): view('akun/wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\akun->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akun))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-13 12:42:17 --> Invalid file: "akun/wrapper.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('akun/wrapper.php')
+ 2 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('akun/wrapper', [], true)
+ 3 APPPATH\Controllers\akun.php(13): view('akun/wrapper', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\akun->index()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\akun))
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

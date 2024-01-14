@@ -1,0 +1,661 @@
+ERROR - 2023-10-17 03:38:37 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 03:38:37 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 03:38:44 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 03:38:44 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 03:38:58 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 03:38:58 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:21 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:21 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:28 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:28 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:28 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:28 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:29 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:29 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:53 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:53 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 04:59:57 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 04:59:57 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'9\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('9')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 05:00:45 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`ko...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`ko...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`ko...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`ko...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 05:00:45 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'11\'
+AND `status` NOT IN (\'reject\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'11\'
+AND `status` NOT IN (\'reject\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'11\'
+AND `status` NOT IN (\'reject\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = :d.userid:
+AND `status` NOT IN :status:', [...], false)
+ 5 APPPATH/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-17 05:26:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 05:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-17 05:26:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-17 05:26:17 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`ko...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`ko...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`ko...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`ko...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 05:26:17 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = :d.userid:
+AND `status` NOT IN :status:', [...], false)
+ 5 APPPATH/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 05:30:16 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`ko...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`ko...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`ko...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`ko...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 05:30:16 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = \'5\'
+AND `status` NOT IN (\'reject\')')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `ks`.`konsulid`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `dosenprodi`.`prodiid` as `dosenprodiid`, `dosenprodi`.`prodiname` as `dosenprodiname`, `dosenprodi`.`prodicode` as `dosenprodiname`, `dosenkampus`.`kampusid` as `dosenkampusid`, `dosenkampus`.`kampusname` as `dosenkampusname`, `t`.`topicid`, `t`.`topicname`, `st`.`topicid` as `subtopicid`, `st`.`topicname` as `subtopicname`, `d`.`userid` as `dosenid`, `d`.`fullname` as `dosenname`, `d`.`jeniskelamin` as `dosen_jenkel`, `us`.`userid`, `us`.`fullname`, `us`.`jeniskelamin` as `user_jenkel`, `ks`.`tanggal`, `ks`.`jamfrom`, `ks`.`jamto`, `ks`.`status`, `ks`.`reason`, `ks`.`link`, `d`.`phonenumber` as `dosen_phone`, `us`.`phonenumber` as `user_phone`, `us`.`email` as `user_mail`, `d`.`email` as `dosen_email`, `ks`.`link`, `ks`.`reason`, `ks`.`status`
+FROM `trkonsultasi` `ks`
+JOIN `mskampus` `k` ON `k`.`kampusid`=`ks`.`kampusid`
+JOIN `msprodi` `p` ON `p`.`prodiid`=`ks`.`prodiid`
+JOIN `mstopic` `t` ON `t`.`topicid`=`ks`.`topicid`
+JOIN `mstopic` `st` ON `st`.`topicid`=`ks`.`topicdtid`
+JOIN `msuser` `d` ON `d`.`userid`=`ks`.`dosenid`
+JOIN `mskampus` `dosenkampus` ON `dosenkampus`.`kampusid`=`d`.`kampusid`
+JOIN `msprodi` `dosenprodi` ON `dosenprodi`.`prodiid`=`d`.`prodiid`
+JOIN `msuser` `us` ON `us`.`userid`=`ks`.`userid`
+WHERE `d`.`userid` = :d.userid:
+AND `status` NOT IN :status:', [...], false)
+ 5 APPPATH/Models/Trkonsultasi.php(35): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(19): App\Models\Trkonsultasi->getKonsul()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 05:33:49 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 05:33:49 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-17 05:34:06 --> mysqli_sql_exception: Unknown column 'p.prodicode' in 'field list' in /home/hala2884/public_html/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/hala2884/public_html/system/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`us...', 0)
+#1 /home/hala2884/public_html/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`us...')
+#2 /home/hala2884/public_html/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`us...')
+#3 /home/hala2884/public_html/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`us...', Array, false)
+#4 /home/hala2884/public_html/app/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/hala2884/public_html/app/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+#6 /home/hala2884/public_html/system/CodeIgniter.php(932): App\Controllers\Beranda->index()
+#7 /home/hala2884/public_html/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+#8 /home/hala2884/public_html/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /home/hala2884/public_html/index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-17 05:34:06 --> Unknown column 'p.prodicode' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'', 0)
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = \'32\'')
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `us`.`userid`, `us`.`usercode`, `us`.`fullname`, `us`.`email`, `us`.`password`, `us`.`phonenumber`, `us`.`role`, `k`.`kampusid`, `k`.`kampusname`, `p`.`prodiid`, `p`.`prodiname`, `p`.`prodicode`, `us`.`jeniskelamin`
+FROM `msuser` `us`
+LEFT JOIN `mskampus` `k` ON `k`.`kampusid`=`us`.`kampusid`
+LEFT JOIN `msprodi` `p` ON `p`.`prodiid`=`us`.`prodiid`
+WHERE `us`.`userid` = :us.userid:', [...], false)
+ 5 APPPATH/Models/Msuser.php(46): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Controllers/Beranda.php(23): App\Models\Msuser->getOne('32')
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()

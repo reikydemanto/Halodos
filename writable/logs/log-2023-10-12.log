@@ -1,0 +1,159 @@
+CRITICAL - 2023-10-12 08:29:27 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:29:31 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:29:32 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:11 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:16 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:33 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:35 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:36 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:40 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:34:44 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 08:59:47 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-12 09:00:46 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-12 09:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-12 09:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-12 09:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-12 09:03:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-12 09:03:33 --> Undefined variable: konsul
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: konsul', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Beranda.php(13): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Beranda->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Beranda))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-12 09:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-12 15:48:35 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Views/v_dashboard.php on line 6.
+ 1 APPPATH/Views/v_dashboard.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'count(): Parameter must be an array or an object that implements Countable', '/home/hala2884/public_html/app/Views/v_dashboard.php', 6, [...])
+ 2 SYSTEMPATH/View/View.php(224): include('/home/hala2884/public_html/app/Views/v_dashboard.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('v_dashboard', [], true)
+ 5 APPPATH/Controllers/Dashboard.php(12): view('v_dashboard', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dashboard->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
